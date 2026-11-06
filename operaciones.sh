@@ -5,6 +5,7 @@ if [ $# -ne 2 ]; then
 	echo "Error: Se debe ingresar exactamente 2 numeros"
 	echo "Uso: $0 <numero1> <numero2>"
 	exit 1
+#Se verifica que sean numeros
 elif ! [[ $1 =~ ^-?[0-9]+$ ]]; then
 	echo "Error: Parametro 1 no es un numero"
         exit 1
